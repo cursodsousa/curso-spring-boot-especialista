@@ -4,11 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java" line="16" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95fd84cf-cc1e-422d-acf1-87458357a402" name="Default Changelist" comment="Configurações e Beans">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/model/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/ClientesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java" afterDir="false" />
+    <list default="true" id="95fd84cf-cc1e-422d-acf1-87458357a402" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/dougllasfps/VendasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/dougllasfps/VendasApplication.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,15 +36,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="270">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -51,28 +57,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="8" selection-end-column="29" />
+            <state relative-caret-position="279">
+              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#616#617#0" expanded="true" />
                 <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,18 +82,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/ClientesRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -117,7 +95,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="06_injecao_de_dependencias" />
       </map>
     </option>
   </component>
@@ -126,14 +104,15 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/umaoutrabiblioteca/projeto/UmaConfiguracaoExterna.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/MeuServico.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/MeuRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/model/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/ClientesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -179,42 +158,7 @@
               <item name="vendas" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dougllasfps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dougllasfps" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dougllasfps" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vendas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vendas" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dougllasfps" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vendas" type="b2602c69:ProjectViewProjectNode" />
@@ -266,6 +210,7 @@
         <item itemvalue="Application.VendasApplication" />
         <item itemvalue="Application.VendasApplication" />
         <item itemvalue="Application.VendasApplication" />
+        <item itemvalue="Application.VendasApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -287,14 +232,20 @@
       <option name="project" value="LOCAL" />
       <updated>1580080132702</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="injeção de dependências">
+      <created>1580083238012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580083238012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18683812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2193646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,7 +254,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.08346972" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28805238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -324,7 +275,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Configurações e Beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurações e Beans" />
+    <MESSAGE value="injeção de dependências" />
+    <option name="LAST_COMMIT_MESSAGE" value="injeção de dependências" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.2.4.RELEASE/spring-boot-dependencies-2.2.4.RELEASE.pom">
@@ -334,31 +286,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/umaoutrabiblioteca/projeto/UmaConfiguracaoExterna.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/ClientesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -374,39 +334,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="8" selection-end-column="29" />
+        <state relative-caret-position="279">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
             <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/repository/ClientesRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/service/ClientesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="81">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
         </state>
       </provider>
     </entry>
