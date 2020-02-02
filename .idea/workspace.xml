@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95fd84cf-cc1e-422d-acf1-87458357a402" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/dougllasfps/VendasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/dougllasfps/VendasApplication.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,15 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="229">
+              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="567">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -64,41 +61,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-              <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#209#210#0" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="324">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/stereotype/Repository.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="162">
+              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1240#1241#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
+                <element signature="e#1453#1454#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,19 +89,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Produto.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Pedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#319#320#0" expanded="true" />
@@ -156,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/ItemPedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="270">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#238#239#0" expanded="true" />
@@ -216,9 +188,9 @@
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Pedido.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/ItemPedido.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java" />
       </list>
     </option>
   </component>
@@ -332,6 +304,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -415,14 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580656570880</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="salvando e obtendo clientes">
+      <created>1580658239885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580658239885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.113464445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16414523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -431,7 +411,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1391162" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28641573" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,7 +436,8 @@
     <MESSAGE value="Criando annotations customizadas de configuração" />
     <MESSAGE value="configurando conexão com banco de dados" />
     <MESSAGE value="criando as classes de modelo" />
-    <option name="LAST_COMMIT_MESSAGE" value="criando as classes de modelo" />
+    <MESSAGE value="salvando e obtendo clientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="salvando e obtendo clientes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.2.4.RELEASE/spring-boot-dependencies-2.2.4.RELEASE.pom">
@@ -480,6 +461,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-production.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/model/Cliente.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/MinhaConfiguration.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/stereotype/Repository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
@@ -487,42 +475,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="54">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/ItemPedido.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="567">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Produto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Pedido.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="297">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#319#320#0" expanded="true" />
@@ -545,75 +525,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Produto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/ItemPedido.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/stereotype/Repository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/entity/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/domain/repositorio/Clientes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="162">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/dougllasfps/VendasApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
