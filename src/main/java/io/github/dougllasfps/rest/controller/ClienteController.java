@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
+import java.util.function.Supplier;
 
 @Controller
 public class ClienteController {
@@ -50,6 +51,21 @@ public class ClienteController {
         }
 
         return ResponseEntity.notFound().build();
+    }
+
+    @PutMapping("/api/clientes/{id}")
+    @ResponseBody
+    public ResponseEntity update(
+            @PathVariable Integer id, @RequestBody Cliente cliente){
+        return clientes
+                    .findById(id)
+                    .map( clienteEncontrado -> {
+                        clienteEncontrado.setNome(cliente.getNome());
+                        clientes.save(clienteEncontrado);
+                        return ResponseEntity.noContent().build();
+                    }).orElseGet(() -> ResponseEntity.notFound().build());
+
+
     }
 
 }
