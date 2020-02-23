@@ -8,6 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -55,17 +56,15 @@ public class ClienteController {
 
     @PutMapping("/api/clientes/{id}")
     @ResponseBody
-    public ResponseEntity update(
-            @PathVariable Integer id, @RequestBody Cliente cliente){
+    public ResponseEntity update( @PathVariable Integer id,
+                                  @RequestBody Cliente cliente ){
         return clientes
-                    .findById(id)
-                    .map( clienteEncontrado -> {
-                        clienteEncontrado.setNome(cliente.getNome());
-                        clientes.save(clienteEncontrado);
-                        return ResponseEntity.noContent().build();
-                    }).orElseGet(() -> ResponseEntity.notFound().build());
-
-
+                .findById(id)
+                .map( clienteExistente -> {
+                    cliente.setId(clienteExistente.getId());
+                    clientes.save(cliente);
+                    return ResponseEntity.noContent().build();
+                }).orElseGet( () -> ResponseEntity.notFound().build() );
     }
 
 }
