@@ -1,7 +1,10 @@
 package io.github.dougllasfps.rest.controller;
 
+import ch.qos.logback.core.net.server.Client;
 import io.github.dougllasfps.domain.entity.Cliente;
 import io.github.dougllasfps.domain.repository.Clientes;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -9,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Supplier;
 
@@ -66,6 +70,21 @@ public class ClienteController {
                     }).orElseGet(() -> ResponseEntity.notFound().build());
 
 
+    }
+
+    @GetMapping("/api/clientes")
+    @ResponseBody
+    public ResponseEntity find( Cliente cliente ){
+
+        ExampleMatcher matcher = ExampleMatcher
+                .matching()
+                .withIgnoreCase()
+                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING);
+
+        Example<Cliente> example = Example.of(cliente, matcher);
+
+        List<Cliente> list = clientes.findAll(example);
+        return ResponseEntity.ok(list);
     }
 
 }
