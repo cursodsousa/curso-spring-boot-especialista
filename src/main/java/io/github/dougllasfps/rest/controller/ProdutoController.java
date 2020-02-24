@@ -57,7 +57,6 @@ public class ProdutoController {
     }
 
     @GetMapping("{id}")
-    @ResponseStatus(NO_CONTENT)
     public Produto getById(@PathVariable Integer id){
         return repository
                 .findById(id)
