@@ -1,5 +1,6 @@
 package io.github.dougllasfps.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,7 +20,7 @@ public class ItemPedido {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "pedido_id")
+    @JoinColumn(name = "pedido_id")@JsonIgnore
     private Pedido pedido;
 
     @ManyToOne
