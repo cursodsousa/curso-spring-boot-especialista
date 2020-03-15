@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vendas" />
         <module name="curso-spring-boot-especialista" />
+        <module name="vendas" />
       </profile>
     </annotationProcessing>
   </component>
