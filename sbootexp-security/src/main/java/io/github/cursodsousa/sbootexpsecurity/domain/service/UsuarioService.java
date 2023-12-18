@@ -24,24 +24,33 @@ public class UsuarioService {
     private final PasswordEncoder passwordEncoder;
 
     @Transactional
-    public Usuario salvar(Usuario usuario, List<String> grupos){
+    public Usuario salvar(Usuario usuario, List<String> grupos) {
         String senhaCriptografada = passwordEncoder.encode(usuario.getSenha());
         usuario.setSenha(senhaCriptografada);
         repository.save(usuario);
 
         List<UsuarioGrupo> listaUsuarioGrupo = grupos.stream().map(nomeGrupo -> {
-            Optional<Grupo> possivelGrupo = grupoRepository.findByNome(nomeGrupo);
-            if (possivelGrupo.isPresent()) {
-                Grupo grupo = possivelGrupo.get();
-                return new UsuarioGrupo(usuario, grupo);
-            }
-            return null;
-        })
+                    Optional<Grupo> possivelGrupo = grupoRepository.findByNome(nomeGrupo);
+                    if (possivelGrupo.isPresent()) {
+                        Grupo grupo = possivelGrupo.get();
+                        return new UsuarioGrupo(usuario, grupo);
+                    }
+                    return null;
+                })
                 .filter(grupo -> grupo != null)
                 .collect(Collectors.toList());
 
         usuarioGrupoRepository.saveAll(listaUsuarioGrupo);
 
+        return usuario;
+    }
+
+    public Usuario obterPorLoginComPermissoes(String login) {
+        Usuario usuario = repository.findByLogin(login);
+        if(usuario != null){
+            List<String> permissoes = usuarioGrupoRepository.findPermissoesByUsuario(usuario);
+            usuario.setPermissoes(permissoes);
+        }
         return usuario;
     }
 }

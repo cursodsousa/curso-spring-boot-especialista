@@ -1,13 +1,13 @@
 package io.github.cursodsousa.sbootexpsecurity.config;
 
+import io.github.cursodsousa.sbootexpsecurity.domain.security.CustomAuthentication;
+import io.github.cursodsousa.sbootexpsecurity.domain.security.IdentificacaoUsuario;
 import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
+import java.util.Arrays;
 
 @Component
 public class SenhaMasterAuthenticationProvider implements AuthenticationProvider {
@@ -21,8 +21,12 @@ public class SenhaMasterAuthenticationProvider implements AuthenticationProvider
         String senhaMaster = "@321";
 
         if(loginMaster.equals(login) && senhaMaster.equals(senha)){
-            return new UsernamePasswordAuthenticationToken
-                    ("Sou Master", null, List.of(new SimpleGrantedAuthority("ADMIN")));
+            IdentificacaoUsuario identificacaoUsuario = new IdentificacaoUsuario();
+            identificacaoUsuario.setNome("Usuario Administrador");
+            identificacaoUsuario.setLogin("master");
+            identificacaoUsuario.setPermissoes(Arrays.asList("ADMIN"));
+
+            return new CustomAuthentication(identificacaoUsuario);
         }
 
         return null;
