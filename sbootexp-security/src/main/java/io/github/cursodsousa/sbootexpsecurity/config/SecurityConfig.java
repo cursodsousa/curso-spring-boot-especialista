@@ -26,6 +26,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http,
             SenhaMasterAuthenticationProvider senhaMasterAuthenticationProvider,
+            CustomAuthenticationProvider customAuthenticationProvider,
             CustomFilter customFilter) throws Exception {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
@@ -36,6 +37,7 @@ public class SecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())
                 .authenticationProvider(senhaMasterAuthenticationProvider)
+                .authenticationProvider(customAuthenticationProvider)
                 .addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
