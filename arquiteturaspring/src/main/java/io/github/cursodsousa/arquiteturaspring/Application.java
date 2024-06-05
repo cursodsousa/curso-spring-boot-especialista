@@ -15,13 +15,17 @@ public class Application {
 
 		SpringApplicationBuilder builder =
 				new SpringApplicationBuilder(Application.class);
-		builder.run(args);
 
 		builder.bannerMode(Banner.Mode.OFF);
+		builder.profiles("producao", "homologacao");
+
+		builder.run(args);
+
+
+		// contexto da aplicação já iniciada:
 		ConfigurableApplicationContext applicationContext = builder.context();
 //		var produtoRepository = applicationContext.getBean("produtoRepository");
 
-		builder.profiles("producao");
 
 		ConfigurableEnvironment environment = applicationContext.getEnvironment();
 		String applicationName = environment.getProperty("spring.application.name");
