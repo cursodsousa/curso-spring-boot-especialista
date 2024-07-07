@@ -1,0 +1,71 @@
+Check port:
+
+netstat -aof | findstr 5432
+
+---
+Create Network
+
+docker create network library-network
+
+---
+Run postgreSQL (https://hub.docker.com/_/postgres)
+
+docker run --name librarydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postgres -e POSTGRES_DB=library -p 5432:5432 postgres
+
+---
+Run Pgadmin4 (https://hub.docker.com/r/dpage/pgadmin4)
+
+docker run --name pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 15432:80 dpage/pgadmin4
+
+
+---
+Compose
+
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: imagelite
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      - imagelitenetwork
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+    ports:
+      - '15432:80'
+    depends_on:
+      - db
+    networks:
+      - imagelitenetwork
+
+  sbootapp:
+    build:
+      dockerfile: Dockerfile
+      context: ./imageliteapi
+    container_name: imageliteapi
+    restart: on-failure
+    depends_on:
+      - db
+    ports:
+      - '8080:8080'
+    networks:
+      - imagelitenetwork
+    environment:
+      - "POSTGRES_HOST=db"
+
+networks:
+  imagelitenetwork:
+    driver: bridge
