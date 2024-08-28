@@ -10,14 +10,14 @@ create table tb_autor(
 
 create table livro (
    id uuid not null primary key,
-   isbn varchar(20) not null,
+   isbn varchar(20) not null unique,
    titulo varchar(150) not null,
    data_publicacao date not null,
    genero varchar(30) not null,
    preco numeric(18,2),
    data_cadastro timestamp,
    data_atualizacao timestamp,
-   id_usuario uuid
+   id_usuario uuid,
    id_autor uuid not null references autor(id),
    constraint chk_genero check (genero in ('FICCAO', 'FANTASIA', 'MISTERIO','ROMANCE', 'BIOGRAFIA', 'CIENCIA') )
 );

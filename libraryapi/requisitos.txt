@@ -29,3 +29,38 @@ Cadastro de Autor
     ou seja, se houver 2 autores com mesmos Nome, Data de Nascimento e Nacionalidade
     serão considerados repetidos, não permitir.
     Não permitir excluir um Autor que possuir algum livro.
+
+
+
+
+
+Cadastro de Livros
+
+# Descrição
+    Deseja-se cadastrar os livros, bem como realizar suas atualizações, consultas e permitir sua exclusão. Ao consultar um livro, deverá ser disponibilizado alguns filtros de pesquisa para busca paginada, campos de busca: titulo, gênero, isbn, nome do autor e ano de publicação.
+
+# Atores
+    Operador e Gerente podem consultar, cadastrar, atualizar e remover Livros.
+
+#Campos solicitados pelo Negócio
+    Dados que deverão ser guardados:
+        ISBN *
+        Titulo *
+        Data de Publicação *
+        Gênero
+        Preço
+        Autor *
+
+    campos com (*) são obrigatórios
+
+# Campos Lógicos
+    Dados não solicitados pela equipe de negócio, mas são de controle da aplicação e auditoria:
+        ID - UUID
+        Data Cadastro
+        Data Ultima Atualização
+        Usuário Ultima Atualização
+
+# Regras de Negócio
+    Não permitir cadastrar um Livro com mesmo ISBN que outro.
+    Se a data de publicação for a partir de 2020, deverá ter o preço informado obrigatoriamente.
+    Data de publicação não pode ser uma data futura
