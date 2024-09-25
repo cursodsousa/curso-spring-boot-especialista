@@ -11,6 +11,7 @@ import io.github.cursodsousa.libraryapi.service.LivroService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,8 +19,9 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("livros")
 @RequiredArgsConstructor
+@RequestMapping("livros")
+@PreAuthorize("hasAnyRole('OPERADOR', 'GERENTE')")
 public class LivroController implements GenericController {
 
     private final LivroService service;
