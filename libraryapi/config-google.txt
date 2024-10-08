@@ -1,0 +1,12 @@
+API's e Serviços -> Credenciais
+
+
+Origens JavaScript autorizadas
+Para usar com solicitações de um navegador
+URIs 1
+http://localhost:8080
+
+URIs de redirecionamento autorizados
+Para usar com solicitações de um servidor da Web
+URIs 1
+http://localhost:8080/login/oauth2/code/google
