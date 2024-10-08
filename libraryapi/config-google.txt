@@ -1,3 +1,17 @@
+Criar custom auth e provider
+Criar endpoint para visualizar quem está logado
+
+Criar projeto GCP e credenciais
+configurar aplicação e oauth2login no security (usar o default login form)
+
+configurar login.html para ir para o google
+
+criar campo email no cadastro de usuario
+criar um obterporemail no service
+customizar o usuario do google para customauth com sucessHandler
+
+
+
 API's e Serviços -> Credenciais
 
 
