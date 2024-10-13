@@ -1,6 +1,7 @@
 package io.github.cursodsousa.libraryapi.config;
 
 import io.github.cursodsousa.libraryapi.security.CustomUserDetailsService;
+import io.github.cursodsousa.libraryapi.security.JwtAuthenticationCustomFilter;
 import io.github.cursodsousa.libraryapi.security.LoginSocialSuccessHandler;
 import io.github.cursodsousa.libraryapi.service.UsuarioService;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.core.GrantedAuthorityDefaults;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -24,15 +24,19 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain securityFilterChain(
-            HttpSecurity http, LoginSocialSuccessHandler successHandler) throws Exception {
+            HttpSecurity http,
+            LoginSocialSuccessHandler successHandler,
+            JwtAuthenticationCustomFilter jwtAuthenticationCustomFilter) throws Exception {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(configurer -> {
                     configurer.loginPage("/login");
                 })
+//                .formLogin(Customizer.withDefaults())
                 .authorizeHttpRequests(authorize -> {
                     authorize.requestMatchers("/login/**").permitAll();
+                    authorize.requestMatchers("/user/**").permitAll();
                     authorize.requestMatchers(HttpMethod.POST, "/usuarios/**").permitAll();
 
                     authorize.anyRequest().authenticated();
@@ -40,15 +44,16 @@ public class SecurityConfiguration {
                 .oauth2Login(oauth2 -> {
                     oauth2
                         .loginPage("/login")
-                        .successHandler(successHandler);
+                            .successHandler(successHandler);
                 })
+                .oauth2ResourceServer(
+                        oauth2ResourceServer ->
+                                oauth2ResourceServer
+                                        .jwt(Customizer.withDefaults()))
+                .addFilterAfter(jwtAuthenticationCustomFilter, BearerTokenAuthenticationFilter.class)
                 .build();
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder(10);
-    }
 
 //    @Bean
     public UserDetailsService userDetailsService(UsuarioService usuarioService){
