@@ -36,7 +36,6 @@ public class SecurityConfiguration {
 //                .formLogin(Customizer.withDefaults())
                 .authorizeHttpRequests(authorize -> {
                     authorize.requestMatchers("/login/**").permitAll();
-                    authorize.requestMatchers("/user/**").permitAll();
                     authorize.requestMatchers(HttpMethod.POST, "/usuarios/**").permitAll();
 
                     authorize.anyRequest().authenticated();
@@ -52,27 +51,6 @@ public class SecurityConfiguration {
                                         .jwt(Customizer.withDefaults()))
                 .addFilterAfter(jwtAuthenticationCustomFilter, BearerTokenAuthenticationFilter.class)
                 .build();
-    }
-
-
-//    @Bean
-    public UserDetailsService userDetailsService(UsuarioService usuarioService){
-
-//        UserDetails user1 = User.builder()
-//                .username("usuario")
-//                .password(encoder.encode("123"))
-//                .roles("USER")
-//                .build();
-//
-//        UserDetails user2 = User.builder()
-//                .username("admin")
-//                .password(encoder.encode("321"))
-//                .roles("ADMIN")
-//                .build();
-//
-//        return new InMemoryUserDetailsManager(user1, user2);
-
-        return new CustomUserDetailsService(usuarioService);
     }
 
     @Bean

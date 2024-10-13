@@ -27,8 +27,10 @@ public class JwtAuthenticationCustomFilter extends OncePerRequestFilter {
         if(deveConverter(authentication)){
             String login = authentication.getName();
             Usuario usuario = usuarioService.obterPorLogin(login);
-            authentication = new CustomAuthentication(usuario);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+            if(usuario != null){
+                authentication = new CustomAuthentication(usuario);
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
         }
         filterChain.doFilter(request, response);
     }
