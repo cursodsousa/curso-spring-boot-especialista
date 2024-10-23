@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: "default"
   application:
     name: libraryapi
   datasource:
@@ -20,3 +22,22 @@ spring:
           google:
             client-id: ${GOOGLE_CLIENT_ID}
             client-secret: ${GOOGLE_CLIENT_SECRET}
+
+
+springdoc:
+  override-with-generic-response: false
+
+---
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  config:
+    activate:
+      on-profile: "test"
