@@ -20,3 +20,7 @@ spring:
           google:
             client-id: ${GOOGLE_CLIENT_ID}
             client-secret: ${GOOGLE_CLIENT_SECRET}
+
+
+springdoc:
+  override-with-generic-response: false
