@@ -24,3 +24,11 @@ spring:
 
 springdoc:
   override-with-generic-response: false
+
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+  datasource:
+    url: jdbc:postgresql://test-db.chw4g4i4gqox.us-east-1.rds.amazonaws.com:5432/library

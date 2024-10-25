@@ -1,4 +1,4 @@
-create table tb_autor(
+create table autor(
   id uuid not null primary key,
   nome varchar(100) not null,
   data_nascimento date not null,
@@ -43,3 +43,12 @@ CREATE TABLE client(
    redirect_uri varchar(200) not null,
    scope varchar(50)
 );
+
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+
+insert into client
+(id, client_id, client_secret, redirect_uri, scope)
+values
+(uuid_generate_v4(), 'meu-client', '$2a$10$.FDOq82AblwsjokzVBgUWeheO85RSDcY4KR89iOxb4fVwcrdZxDiO', 'http://localhost:8080/authorized', 'GERENTE')
