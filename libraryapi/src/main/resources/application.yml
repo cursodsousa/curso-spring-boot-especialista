@@ -1,4 +1,7 @@
 spring:
+  output:
+    ansi:
+      enabled: ALWAYS
   application:
     name: libraryapi
   datasource:
@@ -24,6 +27,30 @@ spring:
 
 springdoc:
   override-with-generic-response: false
+
+logging:
+  pattern:
+    console: '%clr(%d{dd-MM-yyyy HH:mm:ss}){faint} %clr(%5p) %clr([%t]){faint} %clr(%-40.40logger){cyan} %clr(:){yellow} %m%n'
+  file:
+    name: app.log
+  level:
+    root: warn
+    io:
+      github:
+        cursodsousa: trace
+    org:
+      springframework:
+        web: error
+        security: trace
+      hibernate: error
+
+management:
+  server:
+    port: 9090
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 ---
 spring:
