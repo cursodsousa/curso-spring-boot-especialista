@@ -7,6 +7,7 @@ FROM amazoncorretto:21.0.5
 WORKDIR /app
 COPY --from=build ./build/target/*.jar ./app.jar
 EXPOSE 8080
+EXPOSE 9090
 
 ENV DATASOURCE_URL=''
 ENV DATASOURCE_USERNAME='postgres'

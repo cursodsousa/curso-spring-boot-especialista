@@ -1,0 +1,6 @@
+35.175.178.108
+
+
+sudo yum update
+sudo yum install docker
+sudo service docker start
