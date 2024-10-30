@@ -11,3 +11,14 @@ docker run --name librarydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postg
 
 # Rodar Pgadmin 4
 docker run --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 15432:80 -d --network library-network dpage/pgadmin4:8.9
+
+# Criar a imagem da aplicação
+ docker build --tag cursosdevbase/myrepo:latest .
+
+# Criar e subir a tag
+ docker login
+ docker build --tag cursosdevbase/myrepo:latest .
+ docker push cursosdevbase/myrepo:latest
+
+# Rodar a imagem
+docker run --name myrepo -e DATASOURCE_URL=jdbc:postgresql://librarydb-prod:5433/library -e DATASOURCE_USERNAME=postgresprod -e DATASOURCE_PASSWORD=postgresprod --network library-network -d  -p 8080:8080 cursosdevbase/myrepo
