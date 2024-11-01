@@ -11,3 +11,6 @@ docker run --name librarydb -e POSTGRES_PASSWORD=postgres -e POSTGRES_USER=postg
 
 # Rodar Pgadmin 4
 docker run --name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=admin -p 15432:80 -d --network library-network dpage/pgadmin4:8.9
+
+#Rodar na AWS
+sudo docker run --name libraryapi -e DATASOURCE_URL=jdbc:postgresql://host:5432/library -e DATASOURCE_USERNAME=postgres -e DATASOURCE_PASSWORD=postgres -p 8080:8080 -p 9090:9090 cursosdevbase/libraryapi
